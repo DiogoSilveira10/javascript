@@ -11,4 +11,11 @@
 //     }
 // }
 
+/* window.document.getElementById('teste').innerHTML += alert('oi')
+window.document.getElementById('teste').innerHTML += confirm('esta jogando de js?')
+window.document.getElementById('teste').innerHTML += prompt('Qual seu nome?')*/
+
+/* window.*/alert('oi')
+/* window.*/confirm('esta jogando de js?')
+/* window.*/prompt('Qual seu nome?')
 
