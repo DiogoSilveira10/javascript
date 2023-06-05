@@ -1,0 +1,29 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Qual sua nacionalidade?</h1>
+
+    <input type="text" name="nac" id="inacional">
+    <input type="submit" value="enviar" onclick="teste()">
+
+    <div id="res">Sua nacionalidade é:</div>
+    <script>
+        function teste(){
+            var n = document.getElementById('inacional').value;
+            var resp = document.getElementById('res');
+
+            if(n.toLowerCase() === "brasil"){
+                resp.innerHTML = 'Brasileiro';
+            }
+            else {
+                resp.innerHTML = 'Estrangeiro';
+            }
+        }
+    </script>
+</body>
+</html>
