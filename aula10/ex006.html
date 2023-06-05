@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #area{
+            background-color: red;
+            color:white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align:center;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="area"><!-- onclick="clicar()" onmouseenter="entrar()" onmouseleave="saiu()" -->
+      interaja    
+    </div>
+    <script> 
+         var a = window.document.getElementById('area')
+         a.addEventListener('click', clicar)
+         a.addEventListener('mouseenter', mouseentrar)
+         a.addEventListener('mouseleave', saiu)
+        function clicar(){
+            a.innerText = 'clicou!'
+            a.style.background ='green'
+        }
+        function mouseentrar(){
+            a.innerText = 'Entrou'
+        }
+        function saiu(){
+            a.innerText = 'Saiu'
+            a.style.background = 'red'
+        }
+    </script>
+</body>
+</html>
