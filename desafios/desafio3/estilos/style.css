@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+body{
+    background-color:rgba(0, 0, 255, 0.363);
+    
+}
+main{
+    background-color:white;
+    padding: 20px;
+    border-radius:20px;
+    box-shadow:2px 2px 10px rgba(0, 0, 0, 0.432)
+}
+.center{
+    color:white;
+    text-align:center;
+
+}

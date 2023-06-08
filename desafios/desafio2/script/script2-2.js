@@ -1,16 +1,17 @@
 function gerarTabuada(){
     let numero = document.getElementById('num')
-    let txtabuada = document.getElementById('ilista')
-    let tab = 1
-    let res
-    if(num.value.lenght == 0){
+    let tab = document.getElementById('ilista')
+    if(numero.value.length == ''){
         window.alert('Digite um numero')
     } else {
-        while(tab < 10){
+        let n = Number(numero.value)
+        let c = 1
+        tab.innerHTML = ''
+        while(c < 10){
             let item = document.createElement('option')
-            item.text = `${numero} * ${tab} = ${res}`
+            item.text = `${n} * ${c} = ${n*c}`
             tab.appendChild(item)
-            tab ++
+            c++
         }
     }
 }

@@ -1,0 +1,22 @@
+body{
+    background-color:rgba(0, 0, 255, 0.37)
+}
+
+
+
+
+header > h1, footer > p{
+    text-align:center;
+    color:white;
+}
+main{
+    max-width:700px;
+    width:100%;
+    background-color:white;
+    border-radius:20px;
+    padding:20px
+}
+label{
+    padding:20px 0px 20x 10px;
+    
+}
