@@ -4,6 +4,7 @@ let r = 0
 let s = 0
 function addnumero(){
     
+    
     let sel = document.getElementById('addvalor')
     let txt = document.createElement('option')
     sel.appendChild(txt)
