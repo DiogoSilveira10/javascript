@@ -17,11 +17,27 @@ function addnumero(){
 function finalizarConta(){
 
     let escrever 
-    let quantidade 
-    let maior 
-    let menor 
-    let soma 
-    let media 
+    let quantidade = document.getElementById('quantid')
+    let maior = document.getElementById('maior')
+    let menor = document.getElementById('menor')
+    let soma = document.getElementById('soma')
+    let media = document.getElementById('media')
+
+    quantidade.innerHTML = `O numero de valores adicionados foram: ${qtN}`
+    maior.innerHTML = `O maior numero adicionado foi: ${vetor[qtN-1]}`
+    menor.innerHTML = `O menor numero adicionado foi: ${vetor[0]}`
+    r = 0
+    for(nu in vetor){
+        r += Number(vetor[nu])
+    }
+    soma.innerHTML = `A soma de todos os valores adicionados é: ${r}`
+
+    media.innerHTML = `A media de todos os valores adicionados é: ${r/qtN}`
+
+
+
+
+    /*
     r = 0
     s = 0
     
@@ -46,5 +62,5 @@ function finalizarConta(){
     for(let n = 0; n < qtN; n++){
         r += Number(vetor[n])
     }
-    soma.innerHTML = `a soma de todos os numeros inseridos é: ${r}`
+    soma.innerHTML = `a soma de todos os numeros inseridos é: ${r}`*/
 }
